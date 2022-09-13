@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
  * print_alphabet - prints all alphabet in lowercase
  *
@@ -16,7 +16,7 @@ void print_alphabet(void)
 
 	while (chr <= 'z')
 	{
-		putchar(chr);
+		_putchar(chr);
 		chr++;
 	}
 }
