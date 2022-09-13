@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
  * _islower - outputs whether a character is lowercase or not
  * @c: The character to be checked
@@ -11,7 +11,7 @@ int _islower(int c)
 {
 	int boole;
 
-	if (c >= 'a' && c <= 'z')
+	if (c >= 97 && c <= 122)
 	{
 		boole = 1;
 	}
