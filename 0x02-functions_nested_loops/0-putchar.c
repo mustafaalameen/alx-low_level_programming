@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Return: 0 when successful
+i * Return: 0 when successful
  */
 
 int main(void)
@@ -12,7 +12,7 @@ int main(void)
 
 	int i;
 
-	for (i = 0, i <= 9, i++)
+	for (i = 0; i <= 9; i++)
 	{
 		_putchar(pv[i]);
 	}
