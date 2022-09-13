@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
  * print_sign - print ('+', '-', '0') if a certain condition is met
  * @n: integer value to be checked
