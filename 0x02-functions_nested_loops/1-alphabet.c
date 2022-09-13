@@ -19,4 +19,6 @@ void print_alphabet(void)
 		_putchar(chr);
 		chr++;
 	}
+
+	_putchar('\n');
 }
