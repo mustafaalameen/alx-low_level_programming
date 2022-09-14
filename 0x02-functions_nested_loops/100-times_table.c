@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * times_table - return 9 times table
+ * print_times_table - return n times table
  * @n: number to be passed
  */
 
