@@ -24,7 +24,7 @@ int main(void)
 	{
 		sum = a + b;
 
-		if (i != 46)
+		if (i != 47)
 			printf("%lu, ", sum);
 		else
 			printf("%lu", sum);
