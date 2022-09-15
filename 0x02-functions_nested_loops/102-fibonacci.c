@@ -9,17 +9,18 @@
 
 int main(void)
 {
-	long unsigned int a;
-	long unsigned int b;
-	long unsigned int sum;
+	long int a;
+	long int b;
+	long int sum;
 	int i;
+	int n = 50;
 
 	a = 1;
 	b = 2;
 
 	printf("%lu, %lu, ", a, b);
 
-	for (i = 0; i < 47; i++)
+	for (i = 0; i < (n - 2); i++)
 	{
 		sum = a + b;
 
