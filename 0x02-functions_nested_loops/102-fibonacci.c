@@ -29,4 +29,7 @@ int main(void)
 			printf("%lu", sum);
 		a = b;
 		b = sum;
+	}
+
+	return (0);
 }
