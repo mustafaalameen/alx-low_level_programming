@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * _isdigit - return 1 if character is digit and o
+ * if otherwise
+ * @c: value to be checked
+ *
+ * Return: 0 or 1
+ */
+
 int _isdigit(int c)
 {
 	int boole;
