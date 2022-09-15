@@ -27,7 +27,7 @@ int main(void)
 		if (i != 47)
 			printf("%lu, ", sum);
 		else
-			printf("%lu", sum);
+			printf("%lu ", sum);
 		a = b;
 		b = sum;
 	}
