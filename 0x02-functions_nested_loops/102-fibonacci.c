@@ -9,9 +9,9 @@
 
 int main(void)
 {
-	int a;
-	int b;
-	int sum;
+	long unsigned int a;
+	long unsigned int b;
+	long unsigned int sum;
 	int i;
 
 	a = 1;
