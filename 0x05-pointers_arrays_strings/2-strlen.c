@@ -22,3 +22,4 @@ int _strlen(char *s)
 	res = count;
 
 	return (res);
+}
