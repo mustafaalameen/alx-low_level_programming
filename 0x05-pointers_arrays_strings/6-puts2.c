@@ -2,21 +2,29 @@
 #include "main.h"
 
 /**
- * _puts - prints a string followed by a new line
+ * _puts -  prints every other character of a string, starting with the first character, followed by a new line.
  * @str: pointers to a string
  */
 
-void _puts(char *str)
+void puts2(char *str)
 {
-	int i;
+	int len = 0;
+	int l = 0;
+	char *y = str;
+	int z;
 
-	i = 0;
-
-	while (*(str + i) != '\0')
+	while (*y != '\0')
 	{
-		_putchar(str[i]);
-		i++;
+		y++;
+		len++;
 	}
-
+	l = len - 1;
+	for (z = 0 ; z <= l ; z++)
+	{
+		if (z % 2 == 0)
+		{
+			_putchar(str[z]);
+		}
+	}
 	_putchar('\n');
 }
