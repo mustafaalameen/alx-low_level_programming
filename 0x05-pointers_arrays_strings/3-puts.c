@@ -8,15 +8,12 @@
 void _puts(char *str)
 {
 	int i;
+
 	i = 0;
 
-	while (*str != '\0')
+	while (*(str + i) != '\0')
 	{
-		if (i == 0)
-			_putchar(*str[0]);
-		else
-			_putchar(*str[i);
-		str++;
+		_putchar(str[i]);
 		i++;
 	}
 
