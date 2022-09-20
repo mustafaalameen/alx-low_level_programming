@@ -2,19 +2,25 @@
 #include "main.h"
 
 /**
- * _puts - prints a string followed by a new line
- * @str: pointers to a string
+ * print_array -  prints n elements of an array of integers,
+ * followed by a new line.
+ * @a: pointers to an int
+ * @n: parameter fo number of elements
  */
 
-void _puts(char *str)
+void print_array(int *a, int n)
 {
 	int i;
 
 	i = 0;
 
-	while (*(str + i) != '\0')
+	while (i < n)
 	{
-		_putchar(str[i]);
+		if (i != n-1)
+			printf("%d, " a[i])
+		else
+			printf("%d" a[i])
+		a++;
 		i++;
 	}
 
