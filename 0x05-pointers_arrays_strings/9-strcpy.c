@@ -2,21 +2,24 @@
 #include "main.h"
 
 /**
- * _puts - prints a string followed by a new line
- * @str: pointers to a string
+ *_strcpy - update value.
+ *@dest: value to be evaluate.
+ *@src: value to be evaluate.
+ *Return: not.
  */
-
-void _puts(char *str)
+char *_strcpy(char *dest, char *src)
 {
-	int i;
+	int l = 0;
+	int x = 0;
 
-	i = 0;
-
-	while (*(str + i) != '\0')
+	while (*(src + l) != '\0')
 	{
-		_putchar(str[i]);
-		i++;
+		l++;
 	}
-
-	_putchar('\n');
+	for ( ; x < l ; x++)
+	{
+		dest[x] = src[x];
+	}
+	dest[l] = '\0';
+	return (dest);
 }
