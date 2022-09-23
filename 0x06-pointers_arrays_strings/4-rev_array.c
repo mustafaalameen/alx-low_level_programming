@@ -2,16 +2,20 @@
 #include "main.h"
 
 /**
- * swap_int - Swaps two values
- * @a: the first pointer to an integer
- * @b: the second pointer to an integer
+ * reverse_array - reverse the contents of an array of integers
+ * @a: array of integers
+ * @n: number of elements in array
  */
 
-void swap_int(int *a, int *b)
+void reverse_array(int *a, int n)
 {
-	int temp;
+	int i;
+	int h;
 
-	temp = *a;
-	*a = *b;
-	*b = temp;
+	for (i = 0; i < (n / 2); i++)
+	{
+		h = a[i];
+		a[i] = a[n - i - 1];
+		a[n - i - 1] = h;
+	}
 }
