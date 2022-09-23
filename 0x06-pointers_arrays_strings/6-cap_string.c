@@ -2,16 +2,39 @@
 #include "main.h"
 
 /**
- * swap_int - Swaps two values
- * @a: the first pointer to an integer
- * @b: the second pointer to an integer
+ * cap_string - capitalize all words of a string
+ * @str: string
+ * Return: `str`
  */
 
-void swap_int(int *a, int *b)
+char *cap_string(char *str)
 {
-	int temp;
+	int i, c;
+	int trigger;
+	char nots[] = ",;.!?(){}\n\t\" ";
 
-	temp = *a;
-	*a = *b;
-	*b = temp;
+	for (i = 0, trigger = 0; str[i] != '\0'; i++)
+	{
+		if (str[0] > 96 && str[0] < 123)
+			trigger = 1;
+		for (c = 0; nots[c] != '\0'; c++)
+		{
+			if (nots[c] == str[i])
+				trigger = 1;
+		}
+
+		if (trigger)
+		{
+			if (str[i] > 96 && str[i] < 123)
+			{
+				str[i] -= 32;
+				trigger = 0;
+			}
+			else if (str[i] > 64 && str[i] < 91)
+				trigger = 0;
+			else if (str[i] > 47 && str[i] < 58)
+				trigger = 0;
+		}
+	}
+	return (str);
 }
