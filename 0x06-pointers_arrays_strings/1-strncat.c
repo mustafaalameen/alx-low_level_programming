@@ -2,16 +2,26 @@
 #include "main.h"
 
 /**
- * swap_int - Swaps two values
- * @a: the first pointer to an integer
- * @b: the second pointer to an integer
+ * _strncat - concatenate two strings
+ * @dest: string
+ * @src: string
+ * @n: number of elements to concatenate in
+ * Return: pointer to resulting `dest`
  */
 
-void swap_int(int *a, int *b)
+char *_strcat(char *dest, char *src)
 {
-	int temp;
-
-	temp = *a;
-	*a = *b;
-	*b = temp;
+    int i;
+    int j;
+    for (i=0; dest[i] != '\0'; i++)
+    {
+    }
+    
+    for(j=0; src[j] != '\0'; j++)
+    {
+        dest[i] =src[j];
+        i++;
+    }
+    dest[i] = '\0';
+    return(dest);
 }
