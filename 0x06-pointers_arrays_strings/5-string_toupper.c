@@ -2,16 +2,21 @@
 #include "main.h"
 
 /**
- * swap_int - Swaps two values
- * @a: the first pointer to an integer
- * @b: the second pointer to an integer
+ * string_toupper - Change all lowercase letters to uppercase
+ * @c: string
+ * Return: c
  */
 
-void swap_int(int *a, int *b)
+char *string_toupper(char *c)
 {
-	int temp;
+	int i;
 
-	temp = *a;
-	*a = *b;
-	*b = temp;
+	for (i = 0; c[i] != '\0'; i++)
+	{
+		if (c[i] > 96 && c[i] < 123)
+		{
+			c[i] -= 32;
+		}
+	}
+	return (c);
 }
