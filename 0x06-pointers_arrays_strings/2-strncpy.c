@@ -2,16 +2,22 @@
 #include "main.h"
 
 /**
- * swap_int - Swaps two values
- * @a: the first pointer to an integer
- * @b: the second pointer to an integer
+ * _strncpy - Copy a string starting from index 0 of `dest`.
+ * @dest: string
+ * @src: string
+ * @n: number of chars to copy over
+ * Return: `dest` edited string
  */
 
-void swap_int(int *a, int *b)
+char *_strncpy(char *dest, char *src, int n)
 {
-	int temp;
+	int i;
 
-	temp = *a;
-	*a = *b;
-	*b = temp;
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		dest[i] = src[i];
+
+	for (; n > i; i++)
+		dest[i] = '\0';
+
+	return (dest);
 }
