@@ -9,19 +9,16 @@
  * Return: pointer to resulting `dest`
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
-    int i;
-    int j;
-    for (i=0; dest[i] != '\0'; i++)
-    {
-    }
-    
-    for(j=0; src[j] != '\0'; j++)
-    {
-        dest[i] =src[j];
-        i++;
-    }
-    dest[i] = '\0';
-    return(dest);
+	int i, c;
+
+	for (i = 0; dest[i] != '\0'; i++)
+		;
+
+	for (c = 0; src[c] != '\0' && n > 0; c++, n--, i++)
+	{
+		dest[i] = src[c];
+	}
+	return (dest);
 }
